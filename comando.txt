@@ -1,0 +1,3 @@
+cd C:\Program Files (x86)\Dev-Cpp\MinGW64\bin\
+
+g++ C:\Users\Beats\Desktop\goncalo2\main.cpp C:\Users\Beats\Desktop\goncalo2\Tabela.cpp C:\Users\Beats\Desktop\goncalo2\Menu.cpp -o saida_nova -std=gnu++11
