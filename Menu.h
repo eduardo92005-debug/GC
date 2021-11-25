@@ -3,18 +3,24 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "TableCSV.h"
+#include "Tabela.h"
+#include <stdlib.h>
+#include <iomanip>
+#include <vector>
+#include <algorithm>
 
+/* CLASSE PARA GERENCIAR O MENU DE OPCOES*/
 namespace std {
 	class Menu {
 		private:
-			TableCSV _tabela;
+			Tabela _tabela;
 			
 		public:
 			Menu();
+			virtual ~Menu();
 			void mostrarTabela();
 			int exibeTotalVacinadas();
-			int exibeMediaVacinadasParcialmente();
+			double exibeMediaVacinadasParcialmente();
 			int exibeMaiorQuantidadeDose();
 			vector<string> exibeCincoDatasMaiorAplicacaoVacina();
 	};
